@@ -8,6 +8,7 @@ public class PrimeiraClasseJava {
 		//escreve texto no console
 		System.out.println("meu primeiro progama em java");
 		System.out.println("java é orientado a objetos");
+		
 	}
 
 }

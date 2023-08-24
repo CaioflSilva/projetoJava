@@ -9,6 +9,7 @@ public class PrimeiraClasseJava {
 		System.out.println("meu primeiro progama em java");
 		System.out.println("java é orientado a objetos");
 		
+		
 	}
 
 }

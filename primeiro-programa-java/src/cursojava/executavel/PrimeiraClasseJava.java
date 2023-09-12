@@ -6,22 +6,28 @@ public class PrimeiraClasseJava {
 	public static void main(String[] args) {
 
 		int nota1 = 90;
-		int nota2 = 60;
-		int nota3 = 90;
-		int nota4 = 90;
+		int nota2 = 90;
+		int nota3 = 95;
+		int nota4 = 91;
 		int media = 0;
 
 		media = (nota1 + nota2 + nota3 + nota4) / 4;
 
-		if (media >= 70) {
-			System.out.println("Aluno Aprovado: " + media);
+		// operaçoes logicas aninhadas : sao operaçoes dentro de operaçoes
 
-		} else if (media >= 40 && media <= 69) {
-			System.out.println("Aluno em recuperacao:" + media);
+		if (media >= 50) {
+			if (media >= 70) {
+				if (media > 90) {
+					System.out.println("Aluno esta aprovado direto - Parabens " + media);
+				} else {
+					System.out.println("Aluno está aprovado direto " + media);
+				}
+			} else {
+				System.out.println("Aluno esta em recuperaçao " + media);
+			}
 		} else {
-			System.out.println("Aluno Reprovado: " + media);
+			System.out.println("Aluno reprovado direto " + media);
 		}
 
 	}
-
 }

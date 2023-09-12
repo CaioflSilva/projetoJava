@@ -13,20 +13,32 @@ public class PrimeiraClasseJava {
 
 		media = (nota1 + nota2 + nota3 + nota4) / 4;
 
-		// operaçoes logicas aninhadas : sao operaçoes dentro de operaçoes
+		// Switch case : operaçoes exatas
 
-		if (media >= 50) {
-			if (media >= 70) {
-				if (media > 90) {
-					System.out.println("Aluno esta aprovado direto - Parabens " + media);
-				} else {
-					System.out.println("Aluno está aprovado direto " + media);
-				}
-			} else {
-				System.out.println("Aluno esta em recuperaçao " + media);
-			}
-		} else {
-			System.out.println("Aluno reprovado direto " + media);
+		int dia = 5;
+		switch (dia) {
+		case 1:
+			System.out.println("Domingo");
+			break;
+		case 2:
+			System.out.println("Segunda-feira");
+			break;
+		case 3:
+			System.out.println("terça-feira");
+			break;
+		case 4:
+			System.out.println("quarta-feira");
+			break;
+		case 5:
+			System.out.println("quinta-feira");
+			break;
+		case 6:
+			System.out.println("Sexta-feira");
+			break;
+
+		default:
+			System.out.println("Outro dia qualquuer");
+			break;
 		}
 
 	}

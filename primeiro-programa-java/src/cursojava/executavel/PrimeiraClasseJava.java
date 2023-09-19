@@ -7,7 +7,8 @@ public class PrimeiraClasseJava {
 	/* main é um metodo auto executavel em java */
 	public static void main(String[] args) {
 
-		// Obejeto ainda nao existe na memoria
+		// New Aluno() é uma instancia (criaçao de obejtos)
+		//aluno1 é uma referencia para o obejto aluno
 		Aluno aluno1 = new Aluno(); // Aqui será o João
 
 		// agora temos um obejto real

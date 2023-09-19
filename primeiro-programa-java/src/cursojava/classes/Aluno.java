@@ -3,11 +3,10 @@ package cursojava.classes;
 //Essa é nosaa classe/Objeto que representa o Aluno
 public class Aluno {
 
-	
-	//esses são os atributos do aluno
-	String nome;
-	int idade;
-	String dataNascimento;
+	// esses são os atributos do aluno
+	public String nome;
+	public int idade;
+	public String dataNascimento;
 	String RegistroGeral;
 	String numeroCpf;
 	String nomeMae;
@@ -15,7 +14,6 @@ public class Aluno {
 	String dataMatricula;
 	String nomeEscola;
 	String serieMatriculado;
-	
 
 	public Aluno() { // Cria os dados na memoria - porem é padrão do java
 

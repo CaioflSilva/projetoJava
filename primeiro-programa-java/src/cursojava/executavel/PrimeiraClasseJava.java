@@ -19,6 +19,10 @@ public class PrimeiraClasseJava {
 		aluno1.setNomePai("Robson");
 		aluno1.setDataMatricula("14/01/2021");
 		aluno1.setSerieMatriculado("5a");
+		aluno1.setNota1(90);
+		aluno1.setNota2(80.8);
+		aluno1.setNota3(70.9);
+		aluno1.setNota4(90.7);
 
 		System.out.println("Nome é = " + aluno1.getNome());
 		System.out.println("Idade é = " + aluno1.getIdade());
@@ -29,8 +33,9 @@ public class PrimeiraClasseJava {
 		System.out.println("Nome Pai = " + aluno1.getNomePai());
 		System.out.println("DataMa tricula = " + aluno1.getDataMatricula());
 		System.out.println("SerieMa triculado = " + aluno1.getSerieMatriculado());
+		System.out.println("Media do aluno é = " + aluno1.getMediaNota());
 
-//----------------------------
+		System.out.println("===============================================================");
 
 		Aluno aluno2 = new Aluno(); // Aqui será o Pedro
 
@@ -43,6 +48,10 @@ public class PrimeiraClasseJava {
 		aluno2.setNomePai("Edson");
 		aluno2.setDataMatricula("03/02/2020");
 		aluno2.setSerieMatriculado("5b");
+		aluno2.setNota1(88);
+		aluno2.setNota2(98.5);
+		aluno2.setNota3(70.1);
+		aluno2.setNota4(80.7);
 
 		System.out.println("Nome é = " + aluno2.getNome());
 		System.out.println("Idade é = " + aluno2.getIdade());
@@ -53,8 +62,9 @@ public class PrimeiraClasseJava {
 		System.out.println("Nome Pai = " + aluno2.getNomePai());
 		System.out.println("DataMa tricula = " + aluno2.getDataMatricula());
 		System.out.println("Serie Matriculado = " + aluno2.getSerieMatriculado());
+		System.out.println("Media do aluno é = " + aluno2.getMediaNota());
 
-		// -------------------------------------------------------
+		System.out.println("=============================================================");
 
 		Aluno aluno3 = new Aluno(); // Aqui sera o alex
 
@@ -66,7 +76,11 @@ public class PrimeiraClasseJava {
 		aluno3.setNomeMae("Gleyce");
 		aluno3.setNomePai("Maicon");
 		aluno3.setDataMatricula("03/08/2001");
-		aluno3.setSerieMatriculado("5c");
+		aluno3.setSerieMatriculado("5e");
+		aluno3.setNota1(88);
+		aluno3.setNota2(78.5);
+		aluno3.setNota3(70.1);
+		aluno3.setNota4(80.7);
 
 		System.out.println("Nome é = " + aluno3.getNome());
 		System.out.println("Idade é = " + aluno3.getIdade());
@@ -77,8 +91,9 @@ public class PrimeiraClasseJava {
 		System.out.println("Nome Pai = " + aluno3.getNomePai());
 		System.out.println("DataMa tricula = " + aluno3.getDataMatricula());
 		System.out.println("Serie Matriculado = " + aluno3.getSerieMatriculado());
+		System.out.println("Media do aluno é = " + aluno3.getMediaNota());
 
-		// ---------------------------------------------------------
+		System.out.println("=============================================================");
 
 		Aluno aluno4 = new Aluno("Maria");
 
@@ -91,6 +106,10 @@ public class PrimeiraClasseJava {
 		aluno4.setNomePai("Maicon");
 		aluno4.setDataMatricula("03/08/2001");
 		aluno4.setSerieMatriculado("5c");
+		aluno4.setNota1(88);
+		aluno4.setNota2(88.5);
+		aluno4.setNota3(70.1);
+		aluno4.setNota4(80.7);
 
 		System.out.println("Nome é = " + aluno4.getNome());
 		System.out.println("Idade é = " + aluno4.getIdade());
@@ -101,6 +120,7 @@ public class PrimeiraClasseJava {
 		System.out.println("Nome Pai = " + aluno4.getNomePai());
 		System.out.println("DataMa tricula = " + aluno4.getDataMatricula());
 		System.out.println("Serie Matriculado = " + aluno4.getSerieMatriculado());
+		System.out.println("Media do aluno é = " + aluno4.getMediaNota());
 
 		// Aluno aluno5 = new Aluno("José", 50);
 	}

@@ -14,7 +14,7 @@ public class Aluno {
 	private String dataMatricula;
 	private String nomeEscola;
 	private String serieMatriculado;
-	
+
 	private double nota1;
 	private double nota2;
 	private double nota3;
@@ -149,11 +149,29 @@ public class Aluno {
 		this.nota4 = nota4;
 	}
 
-	
 	// metodo que retorna a merdia do aluno
 	public double getMediaNota() {
 		return (nota1 + nota2 + nota3 + nota4) / 4;
 	}
-	
-	
+
+	// metodo que retorna true para aprovado e false para reprovado
+	public boolean getAlunoAprovado() {
+		double media = this.getMediaNota();
+		if (media >= 70) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	// metodo que retorna uma String De aprovado e reprovado
+	public String getAlunoAprovado2() {
+		double media = this.getMediaNota();
+		if (media >= 70) {
+			return "Aluno esta aprovado";
+		} else {
+			return "Aluno está Reprovado";
+		}
+	}
+
 }

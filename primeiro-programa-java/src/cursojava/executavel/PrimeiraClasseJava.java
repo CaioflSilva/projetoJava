@@ -34,6 +34,8 @@ public class PrimeiraClasseJava {
 		System.out.println("DataMa tricula = " + aluno1.getDataMatricula());
 		System.out.println("SerieMa triculado = " + aluno1.getSerieMatriculado());
 		System.out.println("Media do aluno é = " + aluno1.getMediaNota());
+		System.out.println("Resultado = " + (aluno1.getAlunoAprovado() ? " Aprovado " : " Reprovado "));
+		System.out.println("Resultado 2 = " + aluno1.getAlunoAprovado2());
 
 		System.out.println("===============================================================");
 
@@ -63,6 +65,8 @@ public class PrimeiraClasseJava {
 		System.out.println("DataMa tricula = " + aluno2.getDataMatricula());
 		System.out.println("Serie Matriculado = " + aluno2.getSerieMatriculado());
 		System.out.println("Media do aluno é = " + aluno2.getMediaNota());
+		System.out.println("Resultado = " + (aluno2.getAlunoAprovado() ? " Aprovado " : " Reprovado "));
+		System.out.println("Resultado 2 = " + aluno2.getAlunoAprovado2());
 
 		System.out.println("=============================================================");
 
@@ -92,6 +96,9 @@ public class PrimeiraClasseJava {
 		System.out.println("DataMa tricula = " + aluno3.getDataMatricula());
 		System.out.println("Serie Matriculado = " + aluno3.getSerieMatriculado());
 		System.out.println("Media do aluno é = " + aluno3.getMediaNota());
+		System.out.println("Resultado = " + aluno3.getAlunoAprovado());
+		System.out.println("Resultado = " + (aluno3.getAlunoAprovado() ? " Aprovado " : " Reprovado "));
+		System.out.println("Resultado 2 = " + aluno3.getAlunoAprovado2());
 
 		System.out.println("=============================================================");
 
@@ -121,6 +128,8 @@ public class PrimeiraClasseJava {
 		System.out.println("DataMa tricula = " + aluno4.getDataMatricula());
 		System.out.println("Serie Matriculado = " + aluno4.getSerieMatriculado());
 		System.out.println("Media do aluno é = " + aluno4.getMediaNota());
+		System.out.println("Resultado = " + (aluno4.getAlunoAprovado() ? " Aprovado " : " Reprovado "));
+		System.out.println("Resultado 2 = " + aluno4.getAlunoAprovado2());
 
 		// Aluno aluno5 = new Aluno("José", 50);
 	}

@@ -135,8 +135,8 @@ public class Aluno {
 		}
 
 		return somaNotas / disciplinas.size();
-	}
 
+	}
 	// metodo que retorna true para aprovado e false para reprovado
 	public boolean getAlunoAprovado() {
 		double media = this.getMediaNota();

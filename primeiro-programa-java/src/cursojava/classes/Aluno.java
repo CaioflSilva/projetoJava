@@ -19,16 +19,14 @@ public class Aluno {
 	private String serieMatriculado;
 
 	private List<Disciplina> disciplinas = new ArrayList<Disciplina>();
-	
+
 	public void setDisciplinas(List<Disciplina> disciplinas) {
 		this.disciplinas = disciplinas;
 	}
-	
+
 	public List<Disciplina> getDisciplinas() {
 		return disciplinas;
 	}
-	
-	
 
 	public Aluno() { // Cria os dados na memoria - porem é padrão do java
 
@@ -127,11 +125,16 @@ public class Aluno {
 		this.serieMatriculado = serieMatriculado;
 	}
 
-	
-
 	// metodo que retorna a merdia do aluno
 	public double getMediaNota() {
-		return 0;
+
+		double somaNotas = 0.0;
+
+		for (Disciplina disciplina : disciplinas) {
+			somaNotas += disciplina.getNota();
+		}
+
+		return somaNotas / 4;
 	}
 
 	// metodo que retorna true para aprovado e false para reprovado
@@ -154,8 +157,6 @@ public class Aluno {
 		}
 	}
 
-	
-	
 	@Override
 	public String toString() {
 		return "Aluno [nome=" + nome + ", idade=" + idade + ", dataNascimento=" + dataNascimento + ", RegistroGeral="

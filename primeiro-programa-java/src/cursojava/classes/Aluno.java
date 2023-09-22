@@ -1,5 +1,8 @@
 package cursojava.classes;
 
+import java.util.ArrayList;
+import java.util.List;
+
 //Essa é nosaa classe/Objeto que representa o Aluno
 public class Aluno {
 
@@ -15,15 +18,17 @@ public class Aluno {
 	private String nomeEscola;
 	private String serieMatriculado;
 
-	private Disciplina disciplina = new Disciplina();
-
-	public void setDisciplina(Disciplina disciplina) {
-		this.disciplina = disciplina;
+	private List<Disciplina> disciplinas = new ArrayList<Disciplina>();
+	
+	public void setDisciplinas(List<Disciplina> disciplinas) {
+		this.disciplinas = disciplinas;
 	}
-
-	public Disciplina getDisciplina() {
-		return disciplina;
+	
+	public List<Disciplina> getDisciplinas() {
+		return disciplinas;
 	}
+	
+	
 
 	public Aluno() { // Cria os dados na memoria - porem é padrão do java
 
@@ -122,9 +127,11 @@ public class Aluno {
 		this.serieMatriculado = serieMatriculado;
 	}
 
+	
+
 	// metodo que retorna a merdia do aluno
 	public double getMediaNota() {
-		return (disciplina.getNota1() + disciplina.getNota2() + disciplina.getNota3() + disciplina.getNota4()) / 4;
+		return 0;
 	}
 
 	// metodo que retorna true para aprovado e false para reprovado
@@ -147,12 +154,14 @@ public class Aluno {
 		}
 	}
 
+	
+	
 	@Override
 	public String toString() {
 		return "Aluno [nome=" + nome + ", idade=" + idade + ", dataNascimento=" + dataNascimento + ", RegistroGeral="
 				+ RegistroGeral + ", numeroCpf=" + numeroCpf + ", nomeMae=" + nomeMae + ", nomePai=" + nomePai
 				+ ", dataMatricula=" + dataMatricula + ", nomeEscola=" + nomeEscola + ", serieMatriculado="
-				+ serieMatriculado + ", disciplina=" + disciplina + "]";
+				+ serieMatriculado + "]";
 	}
 
 	@Override

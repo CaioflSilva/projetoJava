@@ -134,7 +134,7 @@ public class Aluno {
 			somaNotas += disciplina.getNota();
 		}
 
-		return somaNotas / 4;
+		return somaNotas / disciplinas.size();
 	}
 
 	// metodo que retorna true para aprovado e false para reprovado

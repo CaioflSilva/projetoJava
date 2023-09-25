@@ -49,6 +49,15 @@ public class PrimeiraClasseJava {
 
 			aluno1.getDisciplinas().add(disciplina);
 		}
+
+		int escolha = JOptionPane.showConfirmDialog(null, "deseja remover alguma disciplina ?");
+
+		if (escolha == 0) {
+			String disciplinaRemover = JOptionPane.showInputDialog("qual a disciplina 1, 2, 3, ou 4 ?");
+			aluno1.getDisciplinas().remove(Integer.valueOf(disciplinaRemover).intValue()  -1);
+		}
+		
+
 		System.out.println(aluno1);
 		System.out.println("Media do aluno = " + aluno1.getMediaNota());
 		System.out.println("Resultado = " + aluno1.getAlunoAprovado2());

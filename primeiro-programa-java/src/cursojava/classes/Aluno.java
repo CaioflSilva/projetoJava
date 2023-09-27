@@ -137,6 +137,7 @@ public class Aluno {
 		return somaNotas / disciplinas.size();
 
 	}
+
 	// metodo que retorna true para aprovado e false para reprovado
 	public boolean getAlunoAprovado() {
 		double media = this.getMediaNota();
@@ -150,8 +151,12 @@ public class Aluno {
 	// metodo que retorna uma String De aprovado e reprovado
 	public String getAlunoAprovado2() {
 		double media = this.getMediaNota();
-		if (media >= 70) {
-			return "Aluno esta aprovado";
+		if (media >= 50) {
+			if (media >= 70) {
+				return "Aluno esta aprovado";
+			} else {
+				return "Aluno em Recuperaçao";
+			}
 		} else {
 			return "Aluno está Reprovado";
 		}

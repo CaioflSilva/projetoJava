@@ -85,7 +85,7 @@ public class PrimeiraClasseJava {
 				System.out.println("==========================================================================");
 			}
 		}
-
+  
 		for (Aluno aluno : alunos) {
 			System.out.println("Alunos que sobraram na lista");
 			System.out.println(aluno.getNome());

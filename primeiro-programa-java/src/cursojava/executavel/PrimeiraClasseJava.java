@@ -15,7 +15,7 @@ public class PrimeiraClasseJava {
 
 		List<Aluno> alunos = new ArrayList<Aluno>();
 
-		for (int qtd = 1; qtd <= 1; qtd++) {
+		for (int qtd = 1; qtd <= 2; qtd++) {
 
 			// New Aluno() é uma instancia (criaçao de obejtos)
 			// aluno1 é uma referencia para o obejto aluno
@@ -44,7 +44,7 @@ public class PrimeiraClasseJava {
 			 * aluno1.setNomeEscola(escola);
 			 */
 
-			for (int pos = 1; pos <= 4; pos++) {
+			for (int pos = 1; pos <= 1; pos++) {
 				String nomeDisciplina = JOptionPane.showInputDialog("Nome da Disciplina " + pos + "?");
 				String notaDisciplina = JOptionPane.showInputDialog("Nota da Disciplina " + pos + "?");
 
@@ -78,6 +78,20 @@ public class PrimeiraClasseJava {
 			
 			Aluno aluno = alunos.get(pos);
 			
+			if(aluno.getNome().equalsIgnoreCase("Caio")) {
+				Aluno trocar = new Aluno();
+				trocar.setNome("Aluno foi trocado");
+				
+				Disciplina disciplina = new Disciplina();
+				disciplina.setDisciplina("Matematica");
+				disciplina.setNota(98);
+				
+				trocar.getDisciplinas().add(disciplina);
+				
+				alunos.set(pos, trocar);
+				aluno = alunos.get(pos);
+			}
+			
 			System.out.println("Aluno = " + aluno.getNome());
 			System.out.println("Resultado = " + aluno.getMediaNota());
 			System.out.println("Media do aluno = " + aluno.getAlunoAprovado2());
@@ -85,7 +99,7 @@ public class PrimeiraClasseJava {
 			
 			for (int posd = 0 ; posd < aluno.getDisciplinas().size();posd ++) {
 				Disciplina disc =  aluno.getDisciplinas().get(posd);
-				System.out.println(" Materia = " + disc.getDisciplina() + "Nota = " + disc.getNota());
+				System.out.println(" Materia = " + disc.getDisciplina() + " Nota = " + disc.getNota());
 				
 			}
 		}

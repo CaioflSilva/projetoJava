@@ -105,7 +105,7 @@ public class PrimeiraClasseJava {
 		for (Aluno aluno : alunosReprovados) {
 			System.out.println(" O Aluno : " + aluno.getNome() + " Está Com a Media : " + aluno.getMediaNota()
 					+ " E está " + aluno.getAlunoAprovado2());
-
+ 
 		}
 
 	}

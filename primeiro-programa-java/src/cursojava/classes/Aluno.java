@@ -161,7 +161,7 @@ public class Aluno {
 			}
 		} else {
 			return StatusAluno.REPROVADO;
-		}
+		} 
 	}
 
 	@Override

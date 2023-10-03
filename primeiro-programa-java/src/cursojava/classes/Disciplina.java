@@ -11,7 +11,7 @@ public class Disciplina {
 	}
 
 	public void setNota(double nota) {
-		this.nota = nota;
+		this.nota = nota; 
 	}
 
 	public String getDisciplina() {

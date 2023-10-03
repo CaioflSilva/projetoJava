@@ -148,7 +148,7 @@ public class Aluno {
 		} else {
 			return false;
 		}
-	}
+	} 
 
 	// metodo que retorna uma String De aprovado e reprovado
 	public String getAlunoAprovado2() {
@@ -162,7 +162,7 @@ public class Aluno {
 		} else {
 			return StatusAluno.REPROVADO;
 		} 
-	}
+	} 
 
 	@Override
 	public String toString() {

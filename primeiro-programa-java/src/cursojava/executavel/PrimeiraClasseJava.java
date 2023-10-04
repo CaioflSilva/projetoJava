@@ -15,6 +15,12 @@ public class PrimeiraClasseJava {
 	/* main é um metodo auto executavel em java */
 	public static void main(String[] args) {
 
+		String loguin = JOptionPane.showInputDialog("Informe o loguin");
+		String senha = JOptionPane.showInputDialog("Informe a senha");
+		
+		if (loguin.equalsIgnoreCase("admin") && senha.equalsIgnoreCase("admin")) {
+
+		
 		List<Aluno> alunos = new ArrayList<Aluno>();
 
 		HashMap<String, List<Aluno>> maps = new HashMap<String, List<Aluno>>();
@@ -111,5 +117,6 @@ public class PrimeiraClasseJava {
 
 		}
 
+	}
 	}
 }

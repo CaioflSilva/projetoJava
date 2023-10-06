@@ -1,5 +1,6 @@
 package cursojava.classes;
 
+//Classe filha de pessoa Extende de pessoa
 public class Diretor extends Pessoa {
  
 	private String registroEducacao;
@@ -21,6 +22,8 @@ public class Diretor extends Pessoa {
 	public void setTempoDirecao(int tempoDirecao) {
 		this.tempoDirecao = tempoDirecao;
 	}
+	
+	
 
 	public String getTitulacap() {
 		return titulacap;
@@ -29,5 +32,15 @@ public class Diretor extends Pessoa {
 	public void setTitulacap(String titulacap) {
 		this.titulacap = titulacap;
 	}
+
+	@Override
+	public String toString() {
+		return "Diretor [registroEducacao=" + registroEducacao + ", tempoDirecao=" + tempoDirecao + ", titulacap="
+				+ titulacap + ", nome=" + nome + ", idade=" + idade + ", dataNascimento=" + dataNascimento
+				+ ", RegistroGeral=" + RegistroGeral + ", numeroCpf=" + numeroCpf + ", nomeMae=" + nomeMae
+				+ ", nomePai=" + nomePai + "]";
+	}
+	
+	
 
 }

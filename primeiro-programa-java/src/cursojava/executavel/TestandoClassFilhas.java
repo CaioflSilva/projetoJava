@@ -23,6 +23,7 @@ public class TestandoClassFilhas {
 		Secretario.setExperiencia("Administracao");
 		Secretario.setNumeroCpf("096.844.454.87 Ex ");
 		Secretario.setIdade(18);
+		Secretario.setNome("Lucas");
 
 		System.out.println(aluno);
 		System.out.println(diretor);
@@ -35,6 +36,16 @@ public class TestandoClassFilhas {
    System.out.println( "salario do aluno é = " + aluno.salario());
    System.out.println("salario do Diretor é = " + diretor.salario());
    System.out.println("salario do Secretario é = " + Secretario.salario());
+   
+   
+   teste(aluno);
+   teste(diretor);
+   teste(Secretario);
+		   
 		
+	}
+	
+	public static void teste (Pessoa pessoa) {
+		System.out.println(" Essa pessoa é demais   " + pessoa.getNome() + " E o salario de = " + pessoa.salario());
 	}
 }
